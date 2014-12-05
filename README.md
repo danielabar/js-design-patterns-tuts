@@ -11,6 +11,7 @@ JavaScript Design Patterns
   cd ~/projects
   git clone git@github.com:danielabar/js-design-patterns-tuts.git
   cd js-design-patterns-tuts
+  npm install
   grunt watch
   ```
 

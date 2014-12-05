@@ -26,7 +26,7 @@ module.exports = {
     // 3. As of ES5
     Object.defineProperty(obj, 'country', {
       value : 'Canada'
-    })
+    });
 
     return obj;
   }
