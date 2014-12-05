@@ -15,6 +15,8 @@ JavaScript Design Patterns
   grunt watch
   ```
 
+The watch task will [lint](http://jshint.com/docs/) and run tests using [nodeunit](https://github.com/caolan/nodeunit)
+
 ## Creating Objects with Literals
 
 [Source](src/object-literals.js) | [Test](test/object-literals-test.js)
