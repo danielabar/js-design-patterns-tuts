@@ -1,0 +1,22 @@
+{
+  "name": "js-design-patterns-tuts",
+  "version": "0.0.0",
+  "description": "Learning JavaScript Design Patterns with Tuts Plus",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "nodeunit"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Daniela Baron",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
