@@ -8,6 +8,8 @@
     - [Creating Objects with Literals](#creating-objects-with-literals)
     - [Generating Objects with Object.create()](#generating-objects-with-objectcreate)
     - [The Constructor Pattern](#the-constructor-pattern)
+  - [Code Reuse Patterns (Structural)](#code-reuse-patterns-structural)
+    - [The Inheritance Pattern](#the-inheritance-pattern)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -91,3 +93,34 @@ This can also cause inheritance problems (instructor in course did not expand on
 
 A better way to define functions is on the object's prototype.
 Any property defined on the prototype is shared between all instances of that constructor function.
+
+## Code Reuse Patterns (Structural)
+
+### The Inheritance Pattern
+
+In JavaScript, objects inherit from other objects, as opposed to classical object oriented languages where classes inherit from each other.
+
+Inheritance can be achieved in JavaScript by chaining prototypes.
+
+[Source 1](src/inheritance-pattern-beverage.js) | [Source 2](src/inheritance-pattern-coffee.js) | [Test](test/inheritance-pattern-test.js)
+
+### Mixins (Part 1)
+
+[Source 1](src/mixins-part1/Person.js) | [Source 2](src/mixins-part1/Dog.js) | [Test](test/mixins-part1-test.js)
+
+With inheritance, one object extends another to get more functionality without redefining it.
+This approach works very well, but has some shortcomings.
+
+Syntax - requires setting up prototype chain, and remembering to call prototype's constructor inside child constructor.
+
+Performance - poor performance results from having a long prototype chain.
+
+Mixin pattern can make multiple inheritance easy.
+
+The concept of a mixin is to take an object, and "mix in" the functionality of another object.
+
+jQuery has [extend](http://api.jquery.com/jquery.extend/) to perform mixins.
+
+Custom [implementation](src/mixins-part1/Mixin.js) of extend.
+
+Mixins allow for use of same functionality among different objects, and also to define unique functionality for an object.
