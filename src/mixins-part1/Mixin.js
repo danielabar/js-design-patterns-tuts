@@ -1,5 +1,3 @@
-// Rather than using jQuery extend to do mixins, here is a custom implementation
-
 var extend = function(target) {
 
   // If no arguments are provided, simply return because there is nothing to do
@@ -19,5 +17,4 @@ var extend = function(target) {
   }
 };
 
-// module.exports.extend = extend;
 module.exports = extend;
