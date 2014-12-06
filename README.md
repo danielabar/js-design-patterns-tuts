@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [JavaScript Design Patterns](#javascript-design-patterns)
+  - [Project Setup](#project-setup)
+  - [Creational Patterns](#creational-patterns)
+    - [Creating Objects with Literals](#creating-objects-with-literals)
+    - [Generating Objects with Object.create()](#generating-objects-with-objectcreate)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 JavaScript Design Patterns
 ==========
 
@@ -17,7 +29,9 @@ JavaScript Design Patterns
 
 The watch task will [lint](http://jshint.com/docs/) and run tests using [nodeunit](https://github.com/caolan/nodeunit)
 
-## Creating Objects with Literals
+## Creational Patterns
+
+### Creating Objects with Literals
 
 [Source](src/object-literals.js) | [Test](test/object-literals-test.js)
 
@@ -38,3 +52,9 @@ then its cleaner to use object literal, that keeps the object creation and its d
 
 If you need more control over property behaviour, such as whether its writeable or not, then use defineProperty.
 
+### Generating Objects with Object.create()
+
+[Source](src/object-create.js) | [Test](test/object-create-test.js)
+
+Create method was introduced in ES5.
+More powerful than object literal because object can be created BASED on another object.
