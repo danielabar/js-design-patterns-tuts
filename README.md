@@ -67,4 +67,27 @@ Use [Object.getPrototypeOf](https://developer.mozilla.org/en-US/docs/Web/JavaScr
 
 ### The Constructor Pattern
 
+A constructor function is another way to create objects.
+It's a special function that gets called with the `new` keyword.
+
+By convention, the name of the function should begin with an upper-case letter,
+to distinguish it as a constructor.
+
 [Source](src/constructor-pattern.js) | [Test](test/constructor-pattern-test.js)
+
+A constructor function is another way to create objects.
+It's a special function that gets called with the `new` keyword.
+
+By convention, the name of the function should begin with an upper-case letter,
+to distinguish it from a regular function.
+
+Inside a constructor function, `this` refers to object that is being created.
+
+`instanceof` operator can be used to determine if a given object is an intance of, i.e. was created with a given constructor.
+
+Problem with `Person` constructor in [example](src/constructor-pattern.js) is that a new function object `sayName` is created every time constructor is called.
+This results in increased memory usage because every instance of Person has its own version of sayName function.
+This can also cause inheritance problems (instructor in course did not expand on this topic though).
+
+A better way to define functions is on the object's prototype.
+Any property defined on the prototype is shared between all instances of that constructor function.
