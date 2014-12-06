@@ -7,6 +7,7 @@
   - [Creational Patterns](#creational-patterns)
     - [Creating Objects with Literals](#creating-objects-with-literals)
     - [Generating Objects with Object.create()](#generating-objects-with-objectcreate)
+    - [The Constructor Pattern](#the-constructor-pattern)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -58,3 +59,12 @@ If you need more control over property behaviour, such as whether its writeable 
 
 Create method was introduced in ES5.
 More powerful than object literal because object can be created BASED on another object.
+
+`Object.create` builds a prototype chain.
+Object passed as first argument is set as prototype for the object being created.
+
+Use [Object.getPrototypeOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf) property to determine what prototype its based on.
+
+### The Constructor Pattern
+
+[Source](src/constructor-pattern.js) | [Test](test/constructor-pattern-test.js)
