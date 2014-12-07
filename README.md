@@ -10,6 +10,8 @@
     - [The Constructor Pattern](#the-constructor-pattern)
   - [Code Reuse Patterns (Structural)](#code-reuse-patterns-structural)
     - [The Inheritance Pattern](#the-inheritance-pattern)
+    - [Mixins (Part 1)](#mixins-part-1)
+    - [Mixins (Part 2)](#mixins-part-2)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -116,11 +118,16 @@ Syntax - requires setting up prototype chain, and remembering to call prototype'
 Performance - poor performance results from having a long prototype chain.
 
 Mixin pattern can make multiple inheritance easy.
-
 The concept of a mixin is to take an object, and "mix in" the functionality of another object.
 
 jQuery has [extend](http://api.jquery.com/jquery.extend/) to perform mixins.
-
 Custom [implementation](src/mixins-part1/Mixin.js) of extend.
 
 Mixins allow for use of same functionality among different objects, and also to define unique functionality for an object.
+
+### Mixins (Part 2)
+
+Extend function from previous section is "all or nothing" approach to mixin.
+Takes ALL of source functions and copies them to target object.
+
+May want flexibility to specify which methods should be copied.
