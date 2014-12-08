@@ -7,7 +7,8 @@ var mixin = function(target, source) {
   for (var ii = 2, ll = arguments.length; ii < ll; ii++) {
     var method = arguments[ii];
     // preserve 'this' reference
-    target[method] = source[method].bind(source);
+    // target[method] = source[method].bind(source);
+    target[method] = source[method];
   }
 
 };

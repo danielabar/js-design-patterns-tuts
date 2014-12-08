@@ -10,8 +10,8 @@
     - [The Constructor Pattern](#the-constructor-pattern)
   - [Code Reuse Patterns (Structural)](#code-reuse-patterns-structural)
     - [The Inheritance Pattern](#the-inheritance-pattern)
-    - [Mixins (Part 1)](#mixins-part-1)
-    - [Mixins (Part 2)](#mixins-part-2)
+    - [Mixins](#mixins)
+    - [Decorator Pattern](#decorator-pattern)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -106,7 +106,7 @@ Inheritance can be achieved in JavaScript by chaining prototypes.
 
 [Source 1](src/inheritance-pattern-beverage.js) | [Source 2](src/inheritance-pattern-coffee.js) | [Test](test/inheritance-pattern-test.js)
 
-### Mixins (Part 1)
+### Mixins
 
 [Source 1](src/mixins-part1/Person.js) | [Source 2](src/mixins-part1/Dog.js) | [Test](test/mixins-part1-test.js)
 
@@ -119,15 +119,23 @@ Performance - poor performance results from having a long prototype chain.
 
 Mixin pattern can make multiple inheritance easy.
 The concept of a mixin is to take an object, and "mix in" the functionality of another object.
-
-jQuery has [extend](http://api.jquery.com/jquery.extend/) to perform mixins.
-Custom [implementation](src/mixins-part1/Mixin.js) of extend.
-
 Mixins allow for use of same functionality among different objects, and also to define unique functionality for an object.
 
-### Mixins (Part 2)
-
-Extend function from previous section is "all or nothing" approach to mixin.
+jQuery has [extend](http://api.jquery.com/jquery.extend/) to perform mixins.
+Custom [implementation](src/mixins-part1/Mixin.js) of extend. This function is "all or nothing" approach to mixin.
 Takes ALL of source functions and copies them to target object.
 
-May want flexibility to specify which methods should be copied.
+This [implementation](src/mixins-part2/Mixin2.js) provides flexibility to specify which methods should be copied.
+
+### Decorator Pattern
+
+Inheritance isn't always the best choice to achieve code re-use.
+For example, going back to [Coffee example](src/inheritance-pattern-coffee.js).
+
+Now would like to implement different preferences, for example CoffeeWithCream, CoffeeWithSugar, with cream and sugar etc.
+Inheritance would be too messy for this.
+
+Decorator is a wrapper used to extend functionality of an object, while maintainig that object's interface.
+
+Easiest way to wrap an obhect is to pass it to another function. [Example](src/decorator-pattern/Coffee.js)
+
