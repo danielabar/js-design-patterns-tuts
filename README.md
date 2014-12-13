@@ -12,6 +12,8 @@
     - [The Inheritance Pattern](#the-inheritance-pattern)
     - [Mixins](#mixins)
     - [Decorator Pattern](#decorator-pattern)
+  - [Modules](#modules)
+    - [The Basic Module Pattern](#the-basic-module-pattern)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -146,3 +148,8 @@ This example is not the most efficient because every decorator must do two thing
 This repition can be avoided by using inheritance and the prototype.
 A more advanced [example](src/decorator-pattern/Beverage.js) and [test](test/advanced-decorator-test.js)
 
+## Modules
+
+JavaScript lacks the concept of privacy. But it can be somewhat emulated using functional scope and closures.
+
+### The Basic Module Pattern
