@@ -137,5 +137,12 @@ Inheritance would be too messy for this.
 
 Decorator is a wrapper used to extend functionality of an object, while maintainig that object's interface.
 
-Easiest way to wrap an obhect is to pass it to another function. [Example](src/decorator-pattern/Coffee.js)
+Easiest way to wrap an object is to pass it to another function. [Example](src/decorator-pattern/Coffee.js)
+
+This example is not the most efficient because every decorator must do two things:
+- retrieve the current cost of the coffee
+- create a new cost method
+
+This repition can be avoided by using inheritance and the prototype.
+A more advanced [example](src/decorator-pattern/Beverage.js) and [test](test/advanced-decorator-test.js)
 
