@@ -12,6 +12,10 @@ var dom = {
     var el = document.createElement(tagName);
     el.id = id || this.generateId();
     return el;
+  },
+
+  reset: function() {
+    this._counter = 0;
   }
 
 };
