@@ -4,7 +4,14 @@ module.exports = function(grunt) {
 
     watch: {
       scripts: {
-        files: ['.jshintrc', 'Gruntfile.js', 'src/**/*.js', 'test/**/*.js', 'uitest/**/*.js'],
+        files: [
+          '.jshintrc',
+          'Gruntfile.js',
+          'src/**/*.js',
+          'test/**/*.js',
+          'uitest/**/*.js',
+          'uitest/testrunner.html'
+        ],
         tasks: ['jshint', 'nodeunit', 'mocha'],
         options: {
           atBegin: true,
