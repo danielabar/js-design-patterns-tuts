@@ -157,7 +157,7 @@ This can cause problems as demonstrated in this [example](src/module-pattern/no-
 ### The Basic Module Pattern
 
 Privacy can be somewhat emulated using functional scope and closures,
-as demonstrated in this [example](src/module-pattern/simple-module.js) and [test](uitest/simple-module-test/js)
+as demonstrated in this [example](src/module-pattern/simple-module.js) and [test](uitest/simple-module-test.js)
 
 Basic module pattern is implemented with an immediatelely invoked function and returns an object.
 It makes uses of the local scope of the immediately invoked function to emulate privacy, and only the attributes of the returned object are public.
