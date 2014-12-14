@@ -161,3 +161,10 @@ as demonstrated in this [example](src/module-pattern/simple-module.js) and [test
 
 Basic module pattern is implemented with an immediatelely invoked function and returns an object.
 It makes uses of the local scope of the immediately invoked function to emulate privacy, and only the attributes of the returned object are public.
+
+### The AMD Format
+
+Asynchronous module definition. Popular format supported by many script loaders. This lesson uses [RequireJS](http://requirejs.org/).
+
+[Module](src/amd/lesson09_module.js) | [Configure](src/amd/lesson09.js) | [HTML](src/amd/index.html)
+

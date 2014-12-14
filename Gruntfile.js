@@ -10,7 +10,9 @@ module.exports = function(grunt) {
           'src/**/*.js',
           'test/**/*.js',
           'uitest/**/*.js',
-          'uitest/testrunner.html'
+          'uitest/testrunner.html',
+          'uiamdtest/**/*.js',
+          'uiamdtest/index.html'
         ],
         tasks: ['jshint', 'nodeunit', 'mocha'],
         options: {
@@ -38,7 +40,7 @@ module.exports = function(grunt) {
 
     mocha: {
       all: {
-        src: ['uitest/testrunner.html'],
+        src: ['uitest/testrunner.html', 'uiamdtest/index.html'],
       },
       options: {
         run: true,
