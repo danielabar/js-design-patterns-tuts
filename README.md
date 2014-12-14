@@ -14,6 +14,7 @@
     - [Decorator Pattern](#decorator-pattern)
   - [Modules](#modules)
     - [The Basic Module Pattern](#the-basic-module-pattern)
+    - [The AMD Format](#the-amd-format)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -164,7 +165,8 @@ It makes uses of the local scope of the immediately invoked function to emulate 
 
 ### The AMD Format
 
-Asynchronous module definition. Popular format supported by many script loaders. This lesson uses [RequireJS](http://requirejs.org/).
+Asynchronous module definition. Popular format supported by many script loaders.
+This lesson uses [RequireJS](http://requirejs.org/).
 
-[Module](src/amd/lesson09_module.js) | [Configure](src/amd/lesson09.js) | [HTML](src/amd/index.html)
+[Module](src/amd/lesson09_module.js) | [Configure](src/amd/lesson09.js) | [HTML](src/amd/index.html) | [Test](uiamdtest/dom-tests.js)
 

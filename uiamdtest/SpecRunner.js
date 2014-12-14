@@ -15,11 +15,6 @@ require.config({
 });
 
 define(['mocha', 'chai'], function(mocha, chai) {
-  // var chai = require('chai');
-  // var mocha = require('mocha');
-
-  // Chai
-  // chai.should();
   expect = chai.expect;
 
   mocha.setup('bdd');
