@@ -15,6 +15,8 @@
   - [Modules](#modules)
     - [The Basic Module Pattern](#the-basic-module-pattern)
     - [The AMD Format](#the-amd-format)
+  - [Other Creational Patterns](#other-creational-patterns)
+    - [Singleton](#singleton)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -170,3 +172,11 @@ This lesson uses [RequireJS](http://requirejs.org/).
 
 [Module](src/amd/lesson09_module.js) | [Configure](src/amd/lesson09.js) | [HTML](src/amd/index.html) | [Test](uiamdtest/dom-tests.js)
 
+## Other Creational Patterns
+
+### Singleton
+
+[Example](src/singleton.js) | [Test](uitest/singleton-test.js)
+
+Looks like a module but is different. The purpose of a module is to cleanly separate units of code.
+Purpose of singleton is to ensure an object only has one instance and provide a global point of access to it.
